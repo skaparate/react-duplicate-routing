@@ -1,3 +1,5 @@
+[![Run on Repl.it](https://repl.it/badge/github/skaparate/react-duplicate-routing)](https://repl.it/github/skaparate/react-duplicate-routing)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
