@@ -1,5 +1,13 @@
 [![Run on Repl.it](https://repl.it/badge/github/skaparate/react-duplicate-routing)](https://repl.it/github/skaparate/react-duplicate-routing)
 
+The project is a sample to demonstrate a fix to the routing problem on react-router, where if one clicks the same link more than once, the route gets `pushed` to the history instead of replacing it.
+
+To reproduce the problem:
+
+1. Go to [src/Routes.jsx](src/Routes.jsx).
+2. Comment lines [5](src/Routes.jsx#L5) and [8](src/Routes.jsx#L8).
+3. Click on one of the links (Home, About, Contact) twice (or more) and then try to go back. You should go back to the same page the same number of times you clicked it.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
