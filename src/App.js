@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
+import logo from "./logo.svg";
+import "./App.css";
+import Routes from './Routes';
 
 function App() {
   return (
@@ -18,6 +21,22 @@ function App() {
         >
           Learn React
         </a>
+        <Router>
+          <nav className="navbar">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+          <Routes />
+        </Router>
       </header>
     </div>
   );
